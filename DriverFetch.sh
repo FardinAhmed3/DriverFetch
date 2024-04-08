@@ -1,13 +1,14 @@
 
 
 mkdir Bin
-driverquery > Bin/driverquery.txt
-netstat >  Bin/netstat.txt
-ipconfig > Bin/ipcfg.txt
+driverquery > Bin/Driverquery.txt
+netstat >  Bin/Netstat.txt
+ipconfig > Bin/Ipcfg.txt
 
-wmic product get name > Bin/applications.txt
-wmic csproduct get name > Bin/productinfo.txt
-netstat -an > Bin/activeports.txt
-net start > Bin/services.txt
+wmic product get name > Bin/Applications.txt
+wmic csproduct get name > Bin/Product_info.txt
+netstat -an > Bin/Activeports.txt
+net start > Bin/Services.txt
 
-Get-WindowsUpdateLog > Bin/winupdates.txt
+Get-WindowsUpdateLog > Bin/Winupdates.txt
+winget list > Bin/"Installed_Apps.txt"
